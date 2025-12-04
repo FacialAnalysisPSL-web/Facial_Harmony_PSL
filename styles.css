@@ -1,5 +1,16 @@
-body { font-family: Arial, sans-serif; padding: 20px; max-width: 900px; margin: auto; }
-h1 { font-size: 1.6rem; }
-#canvasWrapper { position: relative; width: 100%; max-width: 640px; }
-#outputCanvas { width: 100%; border: 1px solid #ddd; }
-#results { margin-top: 12px; }
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+#preview-container {
+  margin-top: 20px;
+}
+
+#preview {
+  max-width: 300px;
+  display: none;
+  border-radius: 10px;
+  border: 2px solid #000;
+}
