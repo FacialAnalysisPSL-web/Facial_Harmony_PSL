@@ -1,36 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Calculadora de Armonía Facial</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>Armonía Facial</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <h1>Calculadora de Armonía Facial</h1>
-    <p>Sube una foto (frente, cara clara). El cálculo se hace en tu navegador.</p>
 
-    <input id="imageUpload" type="file" accept="image/*" />
+  <h1>Calculadora de Armonía Facial</h1>
 
-    <div id="canvasWrapper">
-      <canvas id="outputCanvas"></canvas>
-      <img id="inputImage" alt="" style="display:none;" />
-    </div>
+  <input type="file" id="foto" accept="image/*">
 
-    <div id="results">
-      <h2>Resultado</h2>
-      <p id="scoreText">Sube una foto para calcular.</p>
-      <ul id="ratiosList"></ul>
-    </div>
+  <div id="preview-container">
+      <img id="preview" src="" alt="Previsualización">
+  </div>
 
-    <footer>
-      <small>Privacidad: la foto no sale de tu navegador.</small>
-    </footer>
-  </main>
+  <p id="resultado"></p>
 
-  <!-- Librería face-api.js (modelo conocido y sencillo de usar) -->
-  <script defer src="https://unpkg.com/face-api.js"></script>
-  <script defer src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
