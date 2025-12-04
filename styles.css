@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; padding: 20px; max-width: 900px; margin: auto; }
+h1 { font-size: 1.6rem; }
+#canvasWrapper { position: relative; width: 100%; max-width: 640px; }
+#outputCanvas { width: 100%; border: 1px solid #ddd; }
+#results { margin-top: 12px; }
